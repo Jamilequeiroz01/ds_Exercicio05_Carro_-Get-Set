@@ -1,0 +1,45 @@
+public class Carro {
+	public String Cor;  //Atributos da classe
+	public String Marca;
+	public String Modelo;
+	
+	public Carro () {
+		this ("","","");
+	}
+
+	public Carro (String Cor, String Marca, String Modelo) {
+		
+		this.Cor = Cor;
+		this.Marca = Marca;
+		this.Modelo = Modelo;
+	}
+	public String getCor(){ 
+		return Cor;
+	}
+	
+	public void setCor (String Cor){
+		this.Cor = Cor;
+	}
+	
+	public String getMarca() {
+		return Marca;
+	}
+	
+	public void setMarca(String Marca) {
+		this.Marca = Marca;
+	}
+	
+	public String getModelo() {
+		return Modelo;
+	}
+	
+	public void setModelo(String Modelo) {
+		this.Modelo = Modelo;
+	}
+	
+	public void CaracteristicasDoCarro() {  
+		System.out.println("Cor: " + this.getCor());
+		System.out.println("Marca: " + this.getMarca());
+		System.out.println("Modelo: " + this.getModelo());
+	}
+}
