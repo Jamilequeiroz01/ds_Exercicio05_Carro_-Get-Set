@@ -1,0 +1,23 @@
+public class CarroPrincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Carro carro = new Carro ("Prata","BMW","M 235I"); //instanciando
+		
+		System.out.println("Características do carro: ");
+		
+		carro.CaracteristicasDoCarro(); //apresentando
+		
+		System.out.println();
+		
+		System.out.println("Características depois de alterar: ");
+		
+		carro.setCor("Vermelho");  //alterando o valor
+		carro.setMarca("Fiat");
+		carro.setModelo("Toro");
+		
+		carro.CaracteristicasDoCarro(); //apresentando
+
+	}
+}	
